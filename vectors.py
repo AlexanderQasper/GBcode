@@ -1,15 +1,18 @@
+# вариант с введением параметров пользователем, заводим данные через инпут
+# можно заносить данные сразу, прописывая массивы внутри параметра vector1, vector2
 a = int(input('Вектор 1, x: '))
 b = int(input('Вектор 1, y: '))
 c = int(input('Вектор 2, x: '))
 d = int(input('Вектор 2, y: '))
-
+# в параметры векторов прописываем на какую позицию вписываем параметр
 vector1 = [a,b]
 vector2 = [c,d]
+# параметром len мы просчитываем количество параметров в массиве (линии)
 size = len(vector1)
-scalarproduct = 0
+scalarproduct = 0 # устанавливаем параметры в ноль
 index = 0
 
-while index < size:
-    scalarproduct = scalarproduct + vector1[index] * vector2[index]
-    index +=1
-print(scalarproduct)
+while index < size: #пока индекс меньше размера массива
+    scalarproduct = scalarproduct + vector1[index] * vector2[index] # складываем переменную, которую уже вычислили (или равную нулю до) с вычисленным умножением параметров на первой позиции в массивах
+    index +=1 # переходим на вторую позицию в массивах
+print(scalarproduct) # когда дошли до конца массива - выводим то, что получилось
