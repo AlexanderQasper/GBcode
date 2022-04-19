@@ -1,11 +1,15 @@
-vector1 = [3,5]
-vector2 = [5,2]
-size = 2 
+a = int(input('Вектор 1, x: '))
+b = int(input('Вектор 1, y: '))
+c = int(input('Вектор 2, x: '))
+d = int(input('Вектор 2, y: '))
+
+vector1 = [a,b]
+vector2 = [c,d]
+size = len(vector1)
 scalarproduct = 0
 index = 0
 
 while index < size:
     scalarproduct = scalarproduct + vector1[index] * vector2[index]
     index +=1
-else:
-    print(scalarproduct)
+print(scalarproduct)
