@@ -1,13 +1,13 @@
-numbers = [5, 11, 7, 9, 2] 
-size = len(numbers)
-index = 0
+numbers = [5, 11, 7, 9, 2] #вводим множество чисел
+size = len(numbers) #вычисляем количество параметров в массиве автоматически
+index = 0 #устанавливаем параметры в ноль для начала
 max = numbers[0]
 
-while index < size:
-    if numbers[index] > max:
-        max = numbers[index]
-    else: index +=1
+while index < size: #пока номер числа в массиве меньше объёма массива
+    if numbers[index] > max: #сравнивать имеющийся параметр index с параметром максимального значения, и если он меньше
+        max = numbers[index] #записать новое максимальное значение в переменную max
+    else: index +=1 #и шагнуть по массиву дальше на 1 позицию, повторить
 else:
-    print(max)
+    print(max) #если дошли до конца массива, вывести итоговое значения от всего сравнения в консоль
 
-# или встроенная функци питона: max_number = max(numbers)
+# или встроенная функци питона: max_number = max(numbers) без while
