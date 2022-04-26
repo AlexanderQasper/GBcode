@@ -11,4 +11,4 @@ for i in range(len(list)):
     s += list[i]
 avr = s/len(list)
 
-print(s, avr)
+print(avr)
